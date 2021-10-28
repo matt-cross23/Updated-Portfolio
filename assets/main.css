@@ -6,17 +6,13 @@ html{
   }
 
 *{
-  font-family: 'Nunito', sans-serif;
-  margin: 5px;
+  margin: 5px; 
 padding: 5px;
 box-sizing: border-box;
 }
 
-body{
-    background-color: #2596BE;
-    padding: 10px;
-}
-header h1 {
+
+h1 {
       font-weight: bold;
       font-size: 35px;
       margin: 0;
@@ -50,40 +46,23 @@ margin: 20px;
 padding: 5px;
 flex-wrap: wrap;
 }
-.Nav{
- width: fit-content;
- height: fit-content;
 
-}
 
- nav-item{
-    display: inline-block;
-    text-align: center;
-    padding: 5px;
-    list-style: none;
-  
-}
-
-p.work{
-    width: 40%;
-    padding-left: 50px;
-    margin-left: 50px;
-    float: left;
-    box-shadow: inset 5px 0 5px -5px;
-    font-style: italic;
-    color: antiquewhite;
-}
-nav a{
-background-color: #4e1f6f;
+ nav a{
+background-color: #73a3eb;
+font-weight: bold;
 padding: 15px 25px;
 font-size: 15px;
-color: white;
 border-radius: 10px;
 display: inline-block;
 scroll-behavior: smooth;
 }
+.nav-link{
+  font-weight: bold;
+}
+
 nav a:hover{
-box-shadow: 0px 0px 100px 0px black;
+box-shadow: 0px 0px 100px 0px grey;
 }
 
 h2{
@@ -111,7 +90,6 @@ box-shadow: outset 30px 0 0 25px red;
   #Matt:hover{
     transition: all 1s ease-in-out;
     transform: rotateY(360deg);
-    background-color: yellow;
   }
   #Project-1{
     background-position: center;
@@ -123,6 +101,9 @@ box-shadow: outset 30px 0 0 25px red;
 #contact-head{
   display: flex;
   justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  transform: translateX(17px);
 }
 
 #Contact-list{
@@ -134,13 +115,13 @@ box-shadow: outset 30px 0 0 25px red;
     }
     
 #Contact-list > a:hover{
-    font-size: 20px;
+    font-weight: bold;
     cursor: grab;
-    color: purple;
+    color: black;
 }
 
 
-@media screen and (max-width: 600px) {
+ @media screen and (max-width: 600px) {
 body{
 columns: 100%;
 background-color: blue;
@@ -162,8 +143,7 @@ background-color: blue;
       padding-bottom: 10px;
       justify-content: center;
     }
-  
-    header h1 {
+  header h1 {
       width: 100%;
       text-align: center;
     }
@@ -174,6 +154,5 @@ background-color: blue;
       justify-content: center;
       flex-direction: row;
       }
-  }
-     
-     
+      }
+  
