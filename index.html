@@ -10,54 +10,97 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-    <a>
-        <link rel="stylesheet" href="./assets/main.css">
-    </a>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/main.css">
 </head>
+
+
 <header>
-       <nav>
-            <button class="Nav" aria-label="Toggle navigation">
-            <ul class="nav_list">
-                <li class="nav-item"> <a href="#Bio"> About me</a></li>
-                <li class="nav-item"> <a href="#Projects">Projects</a></li>
-                <li class="nav-item"> <a href="#Contact-Link"> Contact Me</a></li>
-            </ul>
-        </button>
-        </nav>
-    <h1 class="Heading">
-        Hello! my name is<strong>Matthew Cross.</strong>
+     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#Heading"> My Portfolio </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Bio">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Work">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact-Link">Contacts</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        "You Only Fail When You Stop Trying!"
+      </span>
+    </div>
+  </div>
+</nav>
+<div class="p-3 mb-2 bg-light text-dark">
+    <h1 id="Heading">
+        Hello! my name is Matthew Cross.
      </h1>
-         <div class="Developer-img">
-        <img src="./assets/imgs/IMG_5225_Original.jpg" alt="Matt's img" id="Matt">
+         <div id="Developer-img">
+        <img src="./assets/imgs/IMG_5225_Original.jpg"class="rounded mx-auto d-block img-fluid"alt="Matt's img" id="Matt">
+        </div>
         </div>
 </header>
 <body>
+
       <section class="Body-container">
         <section id="Bio">
         <br>
             <h2>About me </h2>
-            <p> I am currently a Front End Developer who is learning Full Stack. I have skills in HTML, CSS, and Javascript which allows me to create, style and add functionality to web applications. This portfolio showcases my work completed and demonstrates the skills I have self-taught and learned through Penn's Full Stack Bootcamp Program.</p>
+            <div class="container-fluid bg-light text-dark">
+            <p> I am currently a Front End Developer who is learning Full Stack. I have skills in HTML, CSS, and Javascript which allow me to create, style and add functionality to web applications. This portfolio showcases my work completed and demonstrates the skills I have self-taught and learned through Penn's Full Stack Bootcamp Program.</p>
+            </div>
             <br>
         </section>
-            <h2 class="Work"> Works Completed </h2>
         <section id="Projects">
-            <h3> Project 1: Profile Tracker</h3>
-            <button>Click for details!</button>
+         <a href="https://zaydnubani.github.io/Penn-Collab-Project-1/" alt="Project-1"><h3> Project 1: Profile Tracker</h3></a>
+         <div class="container-fluid bg-light text-dark">
+         <button type="button" class="btn btn-primary btn-sm">Click for details</button>
             <p> My group members and I created an application that graphs and logs tasks completed based on a user's input. This app allows managers to visualize their team's progress or track your daily habits. </p>
-            <p id="Project-1"> <a href="https://zaydnubani.github.io/Penn-Collab-Project-1/" alt="Project-1"><img src="./assets/imgs/Project 1.png" alt="This is my first Project"></a>
-            </p>
-            <h3> Project 2</h3>
-            <p id="Project 2"> <a href="https://matt-cross23.github.io/day-planner/" alt="Project2" img src=""></a>
-            </p>
-            <h3> Project 3</h3>
-            <p id="Project 3"> <a href="" alt="Project3" img src="https://matt-cross23.github.io/Weather-Dashboard/index.html" alt="This is my third Project"></a>
-            </p>
-            <h3> Project 4</h3>
-            <p id="Project 4"> <a href="" alt="Project4" img src="https://matt-cross23.github.io/Coding-quiz/" alt="This is my fourth Project"></a>
-            </p>
-        </section>
-        <section id= "footer">
+            </div>
+            <div class="row">
+            <div class="col"><a href="https://matt-cross23.github.io/day-planner/" alt="Project2"><h3>Project 2: Day Planner</h3></a>
+             </div>
+            <div class="col"> <a href="https://matt-cross23.github.io/Weather-Dashboard/index.html" alt="This is my third Project"><h3>Project 3: Weather Dashboard</h3></a>
+            </div>
+            <div class="col"><a href="https://matt-cross23.github.io/Coding-quiz/" alt="This is my fourth Project"><h3>Project 4: Coding Quiz </h3></a>
+          
+            </div>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./assets/imgs/Project 1.png" class="d-block w-100" alt="Poject-1">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+
  <section id="Contact-Link">
+ <div class="container-fluid bg-light text-dark">
         <h3 id= "contact-head"> Contact Me!!</h3>
         <article>
             <ul id="Contact-list">
@@ -66,6 +109,7 @@
             <a href="https://docs.google.com/document/d/e/2PACX-1vRJldktSTnolRV8F2OqV5NbsL8g0euVCVEiw7Qwgif0YHEr6iQQym3US_l9IHIo5Q/pub"><li>Resume</li></a>
              </ul>
         </article>
-    </section>
+    </div>
     <script src="./assets/script.js"></script> 
+    </section>
     </body>
