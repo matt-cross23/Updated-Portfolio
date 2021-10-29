@@ -1,1 +1,2 @@
 # Updated-Portfolio
+This portfolio demonstrates the new skills I have learned in front-end development and displays the works I have completed. As a front-end developer I am now able to create, design web pages and add functionality to the application. This portfolio is an accumulation of the knowledge I have attained and shows what I am capable of.

@@ -1,9 +1,14 @@
-console.log("Im connected");
-var descriptionP = document.getElementById('descript1');
-let button1 = document.getElementsByClassName('buttonP');
+const displayP = document.querySelector('#btnText')
+let p = document.getElementById('clickText');
 
-function showText(){
-    descriptionP.style.display == "block";
-};
 
-    button1.addEventListener("click", showText);
+function toggleText() {
+  if (p.style.display === "block") {
+    p.style.display = "none";
+    displayP.textContent = "Click for details";
+  } else {
+    p.style.display = "block";
+
+    displayP.textContent = "Click to minimize";
+  }
+}

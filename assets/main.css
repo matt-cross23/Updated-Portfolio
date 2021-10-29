@@ -1,26 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities; 
+
 html{
   scroll-behavior: smooth;
   }
 
 *{
-  font-family: 'Nunito', sans-serif;
-  margin: 0;
-padding: 0;
+  margin: 5px; 
+padding: 5px;
 box-sizing: border-box;
 }
 
-body{ 
-    background-color: #2596BE;
-    padding: 10px;
-}
-header h1 {
+
+h1 {
       font-weight: bold;
       font-size: 35px;
       margin: 0;
     }
+ul{
+  list-style: none;
+}
     
  #Matt{
    display: flex;
@@ -43,56 +40,38 @@ text-align: center;
 display: flex;
 
 justify-content: space-evenly;
-margin: 20px; 
+margin: 20px;
 padding: 5px;
 flex-wrap: wrap;
 }
-.Nav{ 
-  height: fit-content;
-}
 
 
-li{
-    display: inline;
-    text-align: center;
-    padding: 5px;
-    transform: translateY(20%);
-  
-}
-li:hover{
-    height: 5px;
-    width: 5px;
-}
-p.work{
-    width: 40%;
-    padding-left: 50px;
-    margin-left: 50px;
-    float: left;
-    box-shadow: inset 5px 0 5px -5px;
-    font-style: italic;
-    color: antiquewhite;
-}
-nav a{
-background-color: #4e1f6f;
-
+ nav a{
+background-color: #73a3eb;
+font-weight: bold;
 padding: 15px 25px;
-font-family: sans-serif;
 font-size: 15px;
-color: #fff;
 border-radius: 10px;
 display: inline-block;
 scroll-behavior: smooth;
 }
+.nav-link{
+  font-weight: bold;
+}
+
 nav a:hover{
-box-shadow: 0px 0px 100px 0px rgb(0, 68, 255);
+box-shadow: 0px 0px 100px 0px grey;
 }
 
 h2{
   white-space: break-spaces;
 }
-#descript1{
+
+#clickText{
   display: none;
 }
+ 
+
   img{
 
     background-size: 250px;
@@ -111,42 +90,50 @@ box-shadow: outset 30px 0 0 25px red;
   #Matt:hover{
     transition: all 1s ease-in-out;
     transform: rotateY(360deg);
-    background-color: yellow;
   }
   #Project-1{
     background-position: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-   
   }
 
-#Contact-Link{
-  display: inline block;
+#contact-head{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  transform: translateX(17px);
 }
 
-footer > ul{
+#Contact-list{
     align-items: baseline;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    list-style: none;
-    margin-left: 15px;
     width: 100%;
     }
     
+#Contact-list > a:hover{
+    font-weight: bold;
+    cursor: grab;
+    color: black;
+}
+#btnText:focus{
+  height: fit-content;
+  width: fit-content;
+}
 
-
-
-  
-
-
-@media screen and (max-width: 600px) {
+ @media screen and (max-width: 600px) {
 body{
 columns: 100%;
 background-color: blue;
-} 
 }
+ img{
+    width: 100%;
+  }
+}
+
 
 @media screen and (max-width: 800px){
    body{
@@ -160,17 +147,16 @@ background-color: blue;
       padding-bottom: 10px;
       justify-content: center;
     }
-  
-    header h1 {
+  header h1 {
       width: 100%;
       text-align: center;
     }
-  
+ 
     header nav ul {
       margin-top: 20px;
       width: 100%;
       justify-content: center;
       flex-direction: row;
       }
-  }
-     
+      }
+  
